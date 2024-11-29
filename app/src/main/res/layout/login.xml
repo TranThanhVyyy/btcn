@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Tiêu đề chính -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TrackIT!"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:textColor="#CA94C6"/>
+
+        <!-- Icon minh họa -->
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/icon_acc"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="App Icon" />
+
+        <!-- Tiêu đề phụ -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's go to it!"
+            android:textSize="20dp"
+            android:layout_marginBottom="30dp"
+            android:textColor="#CA94C6"
+            />
+
+        <!-- Trường nhập email -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email Address"
+            android:drawableLeft="@drawable/user_solid__1_"
+            android:drawablePadding="10dp"
+            android:padding="15dp"
+            android:textColorHint="#CA94C6"
+            android:background="@drawable/background_user"
+            android:id="@+id/edt_username"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Trường nhập mật khẩu -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/lock_solid"
+            android:drawableRight="@drawable/eye_solid"
+            android:drawablePadding="10dp"
+            android:padding="15dp"
+            android:textColorHint="#CA94C6"
+            android:background="@drawable/background_user"
+            android:id="@+id/edt_password"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Quên mật khẩu -->
+        <TextView
+            android:id="@+id/textView_ForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textColor="#CA94C6"
+            android:layout_gravity="end"
+            android:layout_marginBottom="30dp" />
+
+        <!-- Nút đăng nhập -->
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_login"
+            android:text="Sign in"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Đăng nhập với các tài khoản mạng xã hội -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or sign in with"
+            android:textColor="#CA94C6"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp" />
+
+        <LinearLayout
+            android:id="@+id/layout_social"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="30dp">
+
+            <ImageView
+                android:id="@+id/btn_google"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/google"
+                android:layout_marginRight="15dp"
+                android:contentDescription="Google Login" />
+
+            <ImageView
+                android:id="@+id/btn_facebook"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/facebook"
+                android:layout_marginRight="15dp"
+                android:contentDescription="Facebook Login" />
+
+            <ImageView
+                android:id="@+id/btn_instagram"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_instagram"
+                android:layout_marginRight="15dp"
+                android:contentDescription="Instagram Login" />
+
+            <ImageView
+                android:id="@+id/btn_twitter"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/twitter"
+                android:contentDescription="Twitter Login" />
+        </LinearLayout>
+
+        <!-- Đăng ký tài khoản mới -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Sign up here"
+            android:textColor="#CA94C6"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</ScrollView>
